@@ -29,10 +29,10 @@ def get_confirmation_link(login, domain):
 # Function to automate sign-up
 def sign_up_with_temp_email(email):
     driver = webdriver.Chrome(executable_path=driver_path)
-    driver.get("https://example.com/signup")  # Replace with actual sign-up URL
+    driver.get("https://earnytbvideo.beauty/register.php")  # Replace with actual sign-up URL
     email_input = driver.find_element(By.NAME, "email")
     password_input = driver.find_element(By.NAME, "password")
-    sign_up_button = driver.find_element(By.ID, "signup-btn")  # Replace with actual element IDs
+    sign_up_button = driver.find_element(By.ID, "<button type="button" onclick="submitForm(this)" class="btn btn-theme btn-block mt-5">Sign Up</button>")  # Replace with actual element IDs
     email_input.send_keys(email)
     password_input.send_keys("your-password")
     sign_up_button.click()
